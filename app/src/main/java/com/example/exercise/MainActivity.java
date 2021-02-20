@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     public void openShop(View view) {
         Intent intent = new Intent(this, ShopActivity.class);
         startActivity(intent);
-
     }
     public void openSettings(View view) {
         Intent intent = new Intent(this, SettingsActivity.class);
