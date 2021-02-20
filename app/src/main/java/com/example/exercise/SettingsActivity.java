@@ -39,7 +39,7 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     public void openHome(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, HomepageActivity.class);
         startActivity(intent);
     }
 

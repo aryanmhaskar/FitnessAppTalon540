@@ -6,16 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class SocialActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_social);
+        setContentView(R.layout.activity_login);
     }
 
-    public void openHome(View view) {
+    public void openHomepage(View view) {
         Intent intent = new Intent(this, HomepageActivity.class);
         startActivity(intent);
-    }
+}
 }

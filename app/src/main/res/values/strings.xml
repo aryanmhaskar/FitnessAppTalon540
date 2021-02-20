@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">Exercise</string>
     <string name="title_activity_level_one">level_one</string>
     <!--
@@ -7,4 +8,42 @@
     -->
     <string name="hello_world">Hello Square World!</string>
     <string name="title_activity_test">test</string>
+    <string name="title_activity_login_activity">login_activity</string>
+    <string name="feet_prompt">Feet</string>
+    <string name="inches_prompt">Inches</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="swipe_left_for_register">Swipe Left for Register</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="e_mail">Email</string>
+    <string name="tag">Have Fun and Exercise!</string>
+    <string name="swipe_right_for_login">Swipe Right for Login</string>
+    <string name="register">Register</string>
+    <string name="re_type_password">Re-type Password</string>
+    <string name="your_name">Full Name</string>
+
+    <string-array name="feet_arrays">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="inch_arrays">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+
 </resources>
