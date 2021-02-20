@@ -5,103 +5,35 @@
     android:id="@+id/constraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <EditText
-        android:id="@+id/textSettings"
-        android:layout_width="297dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="96dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:rotationX="4"
-        android:text="Settings"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/heightLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".SettingsActivity">
 
     <Button
         android:id="@+id/submit_settings_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="46dp"
+        android:onClick="registerValues"
         android:text="Submit Changes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textSettings"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/heightLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="188dp"
-        android:layout_marginBottom="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/weightLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/heightInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter Height (cm)" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/weightLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="405dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/heightLayout">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/weightInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter Weight (kg)" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/ageLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/weightLayout">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/ageInput"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:hint="Enter Age (years)" />
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/textGoals"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
+        android:layout_marginBottom="257dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Goals:"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ageLayout" />
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <RadioButton
-        android:id="@+id/radioButton7"
+        android:id="@+id/activity_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -111,46 +43,46 @@
         app:layout_constraintTop_toTopOf="@+id/textGoals" />
 
     <RadioButton
-        android:id="@+id/radioButton8"
+        android:id="@+id/weight_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lose Weight"
-        app:layout_constraintStart_toStartOf="@+id/radioButton7"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton7" />
+        app:layout_constraintStart_toStartOf="@+id/activity_button"
+        app:layout_constraintTop_toBottomOf="@+id/activity_button" />
 
     <RadioButton
-        android:id="@+id/radioButton9"
+        android:id="@+id/muscle_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="47dp"
         android:text="Build Muscle"
-        app:layout_constraintStart_toStartOf="@+id/radioButton8"
-        app:layout_constraintTop_toTopOf="@+id/radioButton8" />
+        app:layout_constraintStart_toStartOf="@+id/weight_button"
+        app:layout_constraintTop_toTopOf="@+id/weight_button" />
 
     <RadioButton
-        android:id="@+id/radioButton10"
+        android:id="@+id/stress_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reduce Stress"
-        app:layout_constraintStart_toStartOf="@+id/radioButton11"
+        app:layout_constraintStart_toStartOf="@+id/physique_button"
         app:layout_constraintTop_toBottomOf="@+id/textGoals" />
 
     <RadioButton
-        android:id="@+id/radioButton11"
+        android:id="@+id/physique_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="7dp"
         android:text="Maintain Physique"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton10" />
+        app:layout_constraintTop_toBottomOf="@+id/stress_button" />
 
     <RadioButton
-        android:id="@+id/radioButton12"
+        android:id="@+id/endurance_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Endurance"
-        app:layout_constraintStart_toStartOf="@+id/radioButton11"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton11" />
+        app:layout_constraintStart_toStartOf="@+id/physique_button"
+        app:layout_constraintTop_toBottomOf="@+id/physique_button" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -166,10 +98,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginBottom="34dp"
         android:text="Female"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/textSettings" />
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintStart_toEndOf="@+id/checkBox" />
 
     <CheckBox
         android:id="@+id/checkBox3"
@@ -179,5 +111,81 @@
         android:text="Other"
         app:layout_constraintBaseline_toBaselineOf="@+id/checkBox2"
         app:layout_constraintStart_toEndOf="@+id/checkBox2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="openHome"
+        android:text="Return Home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Settings"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="193dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/heightInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Height (cm)" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/weightInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weight (kg)" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ageInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age (years)" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
