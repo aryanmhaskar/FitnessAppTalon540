@@ -7,12 +7,27 @@
     tools:context=".PlayActivity">
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="133dp"
-        android:layout_marginTop="169dp"
-        android:text="PLay"
+        android:id="@+id/textView3"
+        android:layout_width="260dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/indigo_daisy"
+        android:gravity="center"
+        android:text="Level Select"
+        android:textSize="80sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/levelOne"
+        android:layout_width="165dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="248dp"
+        android:background="@drawable/custom_button"
+        android:text="Level 1"
+        android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
