@@ -36,7 +36,7 @@
         android:layout_width="165dp"
         android:layout_height="59dp"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="484dp"
+        android:layout_marginTop="476dp"
         android:background="@drawable/custom_button"
         android:text="Level 2"
         android:textAllCaps="false"
