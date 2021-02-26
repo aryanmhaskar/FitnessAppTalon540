@@ -70,10 +70,4 @@
         android:onClick="openHomepage"
         android:text="@string/login"/>
 
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_above="@id/swipeRight"
-        android:layout_centerHorizontal="true"/>
-
 </RelativeLayout>

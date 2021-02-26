@@ -9,6 +9,7 @@
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gifImageView2"
         android:layout_width="wrap_content"
+        android:background="@drawable/homescreen"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
