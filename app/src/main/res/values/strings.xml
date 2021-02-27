@@ -45,5 +45,6 @@
         <item>10</item>
         <item>11</item>
     </string-array>
+    <string name="title_activity_level_one_transition">LevelOneTransition</string>
 
 </resources>
