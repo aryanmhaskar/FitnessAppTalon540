@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
+import com.chaquo.python.android.AndroidPlatform;
 
 
 public class LevelOne extends AppCompatActivity {
@@ -20,9 +21,8 @@ public class LevelOne extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_one);
         System.out.println("run the bink python code");
-        PyObject test = Python.getInstance().getModule("test");
+        Python.start(new AndroidPlatform(getApplicationContext()));
         PyObject test2 = Python.getInstance().getModule("test2");
-        test.call();
         test2.callAttr("test");
         Button run = (Button)findViewById(R.id.levelOne);
 
@@ -35,8 +35,6 @@ public class LevelOne extends AppCompatActivity {
                 runningGif.start();
             }
         });
-
     }
-
 }
 
