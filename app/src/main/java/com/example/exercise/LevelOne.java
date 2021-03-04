@@ -13,6 +13,12 @@ import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 import com.chaquo.python.android.AndroidPlatform;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 
 public class LevelOne extends AppCompatActivity {
 
@@ -20,10 +26,15 @@ public class LevelOne extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_one);
-        System.out.println("run the bink python code");
+
         Python.start(new AndroidPlatform(getApplicationContext()));
         PyObject test2 = Python.getInstance().getModule("test2");
         test2.callAttr("test");
+
+
+        PyObject CVD3 = Python.getInstance().getModule("CVD3");
+        CVD3.callAttr("computer_vision_module");
+
         Button run = (Button)findViewById(R.id.levelOne);
 
         run.setOnClickListener(new View.OnClickListener() {

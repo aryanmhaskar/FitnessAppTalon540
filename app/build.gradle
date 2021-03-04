@@ -25,6 +25,12 @@ android {
         ndk {
             abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
         }
+        python {
+            pip {
+                install "requests==2.24.0"
+                install "opencv-python"
+            }
+        }
 
     }
 
