@@ -6,24 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".LevelOne">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Level One"
-        android:textSize="36sp"
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="1086dp"
+        android:layout_height="581dp"
+        android:layout_marginBottom="220dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewHalf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428"
+        app:srcCompat="@drawable/fightscene" />
 
     <Button
         android:id="@+id/levelOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="524dp"
+        android:layout_marginTop="392dp"
         android:background="@drawable/custom_button"
+        android:rotation="90"
         android:text="Run"
         android:textAllCaps="false"
         android:textSize="30sp"
@@ -35,14 +39,89 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="545dp"
-        android:layout_height="329dp"
+        android:layout_width="328dp"
+        android:layout_height="213dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="68dp"
+        android:rotation="90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/frame00" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="417dp"
+        android:layout_height="991dp"
+        android:layout_marginStart="84dp"
+        android:rotation="90"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageViewHealthy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fightscene" />
+
+    <ImageView
+        android:id="@+id/imageViewFull"
+        android:layout_width="359dp"
+        android:rotation="90"
+        android:layout_height="154dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/healthbarfull" />
+
+    <ImageView
+        android:id="@+id/imageViewHealthy"
+        android:layout_width="295dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.926"
+        app:srcCompat="@drawable/healthbarhealthy" />
+
+    <ImageView
+        android:id="@+id/imageViewHalf"
+        android:layout_width="303dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="2dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFull"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.809"
+        app:srcCompat="@drawable/healthbarhalf" />
+
+    <ImageView
+        android:id="@+id/imageViewEmpty"
+        android:layout_width="319dp"
+        android:rotation="90"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="45dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFull"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/healthbarempty" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

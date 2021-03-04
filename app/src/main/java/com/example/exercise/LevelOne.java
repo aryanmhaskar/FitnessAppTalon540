@@ -11,10 +11,24 @@ import android.widget.ImageView;
 
 public class LevelOne extends AppCompatActivity {
 
+    int healthBar = 4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_one);
+
+        if (healthBar == 4) {
+            ImageView imageView = (ImageView) findViewById(R.id.imageViewFull);
+            imageView.setVisibility(View.VISIBLE);
+            ImageView imageView2 = (ImageView) findViewById(R.id.imageViewHealthy);
+            imageView2.setVisibility(View.INVISIBLE);
+            ImageView imageView3 = (ImageView) findViewById(R.id.imageViewHalf);
+            imageView3.setVisibility(View.INVISIBLE);
+            ImageView imageView4 = (ImageView) findViewById(R.id.imageViewEmpty);
+            imageView4.setVisibility(View.INVISIBLE);
+        }
 
         Button run = (Button)findViewById(R.id.levelOne);
 
@@ -25,10 +39,42 @@ public class LevelOne extends AppCompatActivity {
                 example.setImageResource(R.drawable.animatedgif);
                 AnimationDrawable runningGif = (AnimationDrawable)example.getDrawable();
                 runningGif.start();
+                healthBar --;
+                if (healthBar == 3) {
+                    ImageView imageView = (ImageView) findViewById(R.id.imageViewFull);
+                    imageView.setVisibility(View.INVISIBLE);
+                    ImageView imageView2 = (ImageView) findViewById(R.id.imageViewHealthy);
+                    imageView2.setVisibility(View.VISIBLE);
+                    ImageView imageView3 = (ImageView) findViewById(R.id.imageViewHalf);
+                    imageView3.setVisibility(View.INVISIBLE);
+                    ImageView imageView4 = (ImageView) findViewById(R.id.imageViewEmpty);
+                    imageView4.setVisibility(View.INVISIBLE);
+                }
+                else if (healthBar == 2) {
+                    ImageView imageView = (ImageView) findViewById(R.id.imageViewFull);
+                    imageView.setVisibility(View.INVISIBLE);
+                    ImageView imageView2 = (ImageView) findViewById(R.id.imageViewHealthy);
+                    imageView2.setVisibility(View.INVISIBLE);
+                    ImageView imageView3 = (ImageView) findViewById(R.id.imageViewHalf);
+                    imageView3.setVisibility(View.VISIBLE);
+                    ImageView imageView4 = (ImageView) findViewById(R.id.imageViewEmpty);
+                    imageView4.setVisibility(View.INVISIBLE);
+                }
+                else if (healthBar == 1) {
+                    ImageView imageView = (ImageView) findViewById(R.id.imageViewFull);
+                    imageView.setVisibility(View.INVISIBLE);
+                    ImageView imageView2 = (ImageView) findViewById(R.id.imageViewHealthy);
+                    imageView2.setVisibility(View.INVISIBLE);
+                    ImageView imageView3 = (ImageView) findViewById(R.id.imageViewHalf);
+                    imageView3.setVisibility(View.INVISIBLE);
+                    ImageView imageView4 = (ImageView) findViewById(R.id.imageViewEmpty);
+                    imageView4.setVisibility(View.VISIBLE);
+                }
             }
         });
 
     }
+
 
 }
 
