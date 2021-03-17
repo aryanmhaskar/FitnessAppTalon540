@@ -69,14 +69,14 @@
     <ImageView
         android:id="@+id/imageViewFull"
         android:layout_width="359dp"
-        android:rotation="90"
         android:layout_height="154dp"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="16dp"
+        android:rotation="90"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.773"
         app:srcCompat="@drawable/healthbarfull" />
 
     <ImageView
@@ -112,15 +112,15 @@
     <ImageView
         android:id="@+id/imageViewEmpty"
         android:layout_width="319dp"
-        android:rotation="90"
         android:layout_height="100dp"
         android:layout_marginStart="40dp"
         android:layout_marginBottom="45dp"
+        android:rotation="90"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/imageViewFull"
         app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.73"
         app:srcCompat="@drawable/healthbarempty" />
 
 
