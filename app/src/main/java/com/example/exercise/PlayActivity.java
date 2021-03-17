@@ -18,4 +18,9 @@ public class PlayActivity extends AppCompatActivity {
         Intent intent = new Intent(this, LevelOneTransition.class);
         startActivity(intent);
     }
+
+    public void openHome(View view) {
+        Intent intent = new Intent(this, HomepageActivity.class);
+        startActivity(intent);
+    }
 }
