@@ -9,9 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.chaquo.python.PyObject;
-import com.chaquo.python.Python;
-import com.chaquo.python.android.AndroidPlatform;
+import android.view.Window;
+import android.view.WindowManager;
+import android.content.pm.ActivityInfo;
 
 
 public class LevelOne extends AppCompatActivity {
@@ -21,12 +21,12 @@ public class LevelOne extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_one);
-        Python.start(new AndroidPlatform(getApplicationContext()));
-
-        PyObject CVD3 = Python.getInstance().getModule("CVD3");
-        CVD3.callAttr("computer_vision_module");
 
         if (healthBar == 4) {
             ImageView imageView = (ImageView) findViewById(R.id.imageViewFull);
@@ -44,9 +44,9 @@ public class LevelOne extends AppCompatActivity {
         run.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ImageView example = (ImageView)findViewById(R.id.imageView8);
-                example.setImageResource(R.drawable.animatedgif);
-                AnimationDrawable runningGif = (AnimationDrawable)example.getDrawable();
+                ImageView enemy = (ImageView)findViewById(R.id.imageView8);
+                enemy.setImageResource(R.drawable.animatedgif);
+                AnimationDrawable runningGif = (AnimationDrawable)enemy.getDrawable();
                 runningGif.start();
                 healthBar --;
                 if (healthBar == 3) {

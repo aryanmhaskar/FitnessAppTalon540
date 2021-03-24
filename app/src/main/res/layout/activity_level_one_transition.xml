@@ -8,10 +8,10 @@
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gifImageView2"
-        android:layout_width="870dp"
-        android:layout_height="569dp"
+        android:layout_width="721dp"
+        android:layout_height="468dp"
         android:background="@drawable/transition"
-        android:rotation="90"
+        android:rotation="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.621"

@@ -6,53 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".PlayActivity">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="260dp"
-        android:layout_height="194dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/indigo_daisy"
-        android:gravity="center"
-        android:text="Level Select"
-        android:textSize="80sp"
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="843dp"
+        android:layout_height="399dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516"
+        app:srcCompat="@drawable/levelselectmap" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="712dp"
-        android:layout_marginEnd="116dp"
-        android:onClick="openHome"
-        android:text="Return Home"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/levelOne"
-        android:layout_width="165dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="260dp"
-        android:background="@drawable/custom_button"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="92dp"
         android:onClick="openLevelOneTransition"
-        android:text="Level 1"
-        android:textAllCaps="false"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Enter Level One"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/levelTwo"
-        android:layout_width="165dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="472dp"
-        android:background="@drawable/custom_button"
-        android:text="Level 2"
-        android:textAllCaps="false"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

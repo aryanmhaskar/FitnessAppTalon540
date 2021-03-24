@@ -8,20 +8,19 @@
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gifImageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/homescreen"
+        android:layout_width="414dp"
+        android:layout_height="733dp"
+        android:background="@drawable/wisp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/play"
-        android:layout_width="207dp"
-        android:layout_height="89dp"
+        android:layout_width="189dp"
+        android:layout_height="85dp"
         android:layout_marginStart="92dp"
         android:layout_marginTop="280dp"
         android:background="@drawable/custom_button"
@@ -33,13 +32,13 @@
         app:layout_constraintBottom_toTopOf="@+id/social"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.04" />
 
     <Button
         android:id="@+id/social"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="384dp"
+        android:layout_marginTop="516dp"
         android:background="@drawable/custom_button"
         android:onClick="openSocial"
         android:text="Social"
@@ -47,23 +46,6 @@
         android:textSize="30sp"
         android:typeface="serif"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/shop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="456dp"
-        android:background="@drawable/custom_button"
-        android:onClick="openShop"
-        android:text="Shop"
-        android:textAllCaps="false"
-        android:textSize="30sp"
-        android:typeface="serif"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -71,29 +53,30 @@
         android:id="@+id/settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="524dp"
+        android:layout_marginBottom="164dp"
         android:background="@drawable/custom_button"
         android:onClick="openSettings"
         android:text="Settings"
         android:textAllCaps="false"
         android:textSize="30sp"
         android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="260dp"
-        android:layout_height="194dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/indigo_daisy"
-        android:gravity="center"
-        android:text="Welcome to FiTT"
-        android:textSize="80sp"
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="253dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071"
+        app:srcCompat="@drawable/fittlogo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
