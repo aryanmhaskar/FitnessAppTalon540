@@ -26,4 +26,4 @@ Total params: 101,911
 Trainable params: 101,911
 Non-trainable params: 0
 
-TalonNetV5 achieved a 97% CCR, but it only trained on roughly 70 images
+TalonNetV5 achieved a 99.3% CCR, but it only trained on roughly 70 images
